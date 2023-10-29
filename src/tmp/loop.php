@@ -1,15 +1,18 @@
 <?php
 
-$i = 0;
+// $numbers = [1, 2, 3, 4, 5];
 
-while (true) {
-    // 50より少なければ
-    if ($i <= 50) {
-        // 10ずつ増やす
-        echo $i . PHP_EOL;
-        $i += 10;
-    } else {
-        // loopを終了させる
-        break;
-    }
+// foreach ($numbers as $number) {
+//     echo $number * 2 . PHP_EOL;
+// }
+
+$currencies = [
+    'japan' => 'yen',
+    'us' => 'dollar',
+    'england' => 'pound',
+];
+
+
+foreach ($currencies as $country => $currency) {
+    echo $country . ':' . $currency . PHP_EOL;
 }
