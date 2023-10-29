@@ -74,3 +74,21 @@
 2. アプリケーションをデータベースに対応させる
 3. Web アプリケーションを作成
 4. Heroku を使用してアプリケーションを Web 上に公開
+
+## コーディング規約
+
+```
+PHPではPSRが最もスタンダードなコーディング規約です。中でもPSR-1とPSR-12は基本的な部分をまとめた規約なので、目を通してみましょう。
+
+PSR-1（公式ドキュメント）
+https://www.php-fig.org/psr/psr-1/
+
+PSR-1（日本語訳）
+https://www.ritolab.com/entry/91
+
+PSR-12(公式ドキュメント)
+https://www.php-fig.org/psr/psr-12/
+
+PSR-12(日本語訳)
+https://www.ritolab.com/entry/208
+```
