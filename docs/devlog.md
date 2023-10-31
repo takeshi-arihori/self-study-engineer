@@ -92,3 +92,35 @@ https://www.php-fig.org/psr/psr-12/
 PSR-12(日本語訳)
 https://www.ritolab.com/entry/208
 ```
+
+## DB 接続
+
+```
+docker compose exec app mysql -h db -u book_log -D book_log -p
+pass
+```
+
+```
+CREATE TABLE companies
+(
+  id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255),
+  establishment_date DATE,
+  founder VARCHAR(255),
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+) DEFAULT CHARACTER SET=utf8mb4;
+```
+
+- boook_log
+
+```
+CREATE TABLE reviews (
+  id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255),
+  author VARCHAR(100),
+  status VARCHAR(10),
+  score INTEGER,
+  summary VARCHAR(1000),
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+) DEFAULT CHARACTER SET=utf8mb4;
+```
