@@ -111,7 +111,7 @@ CREATE TABLE companies
 ) DEFAULT CHARACTER SET=utf8mb4;
 ```
 
-- boook_log
+- book_log
 
 ```
 CREATE TABLE reviews (
@@ -124,3 +124,5 @@ CREATE TABLE reviews (
   created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) DEFAULT CHARACTER SET=utf8mb4;
 ```
+
+INSERT INTO reviews (title, author, status, score, summary) VALUES ('PHP 入門', '山田太郎', '読了', 5, 'PHP の入門書です。');
