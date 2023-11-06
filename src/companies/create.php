@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/../lib/mysqli.php';
+require_once __DIR__ . '/lib/mysqli.php';
 
 function createCompany($link, $company)
 {
@@ -72,8 +72,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         createCompany($link, $company);
         mysqli_close($link);
         // index.phpにredirectする
-        // header("Location: index.php");
+        header("Location: index.php");
     }
 }
 
-include 'views/new.php';
+$title = '会社情報の登録';
+$content = __DIR__ . '/views/new.php';
+
+include 'views/layout.php';
