@@ -1,10 +1,13 @@
 <?php
 
-$x1 = 1;
-$x2 = 2;
+$userAges = [
+    'Tanaka' => 20,
+    'Kimura' => 25,
+    'Tabata' => 40,
+];
 
-$y1 = 1;
-$y2 = 2;
+$usersOver30 = array_filter($userAges, function ($v) {
+    return $v >= 30;
+});
 
-
-echo sqrt(pow($x2 - $x1, 2) + pow($y2 - $y1, 2));
+print_r($usersOver30);
