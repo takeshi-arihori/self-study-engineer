@@ -57,6 +57,7 @@
  * ie. [1 => [30, 15], 2 => [30] ]
 */
 
+
 const SPLIT_LENGTH = 2;
 
 function getInput()
