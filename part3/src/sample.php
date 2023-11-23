@@ -1,7 +1,8 @@
 <?php
 
-const PRICE = 200;
-
-if ($v === 1) {
-    echo 'Hello';
+function sayHello(string $argString): void
+{
+    echo "Hello" . $argString . PHP_EOL;
 }
+
+sayHello("test");
