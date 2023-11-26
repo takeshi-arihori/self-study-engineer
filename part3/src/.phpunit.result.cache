@@ -1,1 +1,1 @@
-{"version":1,"defects":{"ViewingTimesTest::test":7},"times":{"MathTest::testDouble":0.001,"ViewingTimesTest::test":0.036,"BakeryTest::testDisplayResult":0.022}}
+{"version":1,"defects":{"ViewingTimesTest::test":7,"SupermarketTest::testCalc":8,"TwoCardPokerTest::testShowDown":7},"times":{"MathTest::testDouble":0.002,"ViewingTimesTest::test":0,"BakeryTest::testDisplayResult":0.03,"QuizTest::test":0.02,"SupermarketTest::testCalc":0.022,"TwoCardPokerTest::testShowDown":0.022}}
